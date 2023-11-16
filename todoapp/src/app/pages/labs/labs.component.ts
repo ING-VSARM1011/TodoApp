@@ -1,6 +1,5 @@
 import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SIGNAL } from '@angular/core/primitives/signals';
 
 @Component({
   selector: 'app-labs',
@@ -11,11 +10,11 @@ import { SIGNAL } from '@angular/core/primitives/signals';
 })
 export class LabsComponent {
     welcome = 'Hola';
-    tasks = [
+    tasks = signal([
       'Instalar el Angular CLI',
       'Crear Proyecto',
       'Crear Componentes'
-    ];
+    ]);
     name = signal('Daniel');
     age = 30;
     disabled = true;
