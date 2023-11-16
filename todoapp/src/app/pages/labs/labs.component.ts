@@ -19,11 +19,11 @@ export class LabsComponent {
     age = 30;
     disabled = true;
     img = 'https://w3schools.com/howto/img_avatar.png';
-    person = {
+    person = signal({
       name: 'Nicolas',
-      age: 18,
+      age: 16,
       avatar: 'https://w3schools.com/howto/img_avatar.png'
-    };
+    });
 
     clickHandler() {
       alert('Hola');
