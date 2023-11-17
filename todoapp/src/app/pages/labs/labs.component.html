@@ -43,4 +43,12 @@
   <ng-template #elseBlock>
     Mi nombre es {{ person().name }} y soy menor de 18
   </ng-template>
+  <hr />
+  <input type="text" [value]="person().name" (change)="changeName($event)">
+  <div [ngSwitch]="person().name">
+    <p *ngSwitchCase="'Nicolas'">Yo soy Nicolas</p>
+    <p *ngSwitchCase="'Julian'">Yo soy Julian</p>
+    <p *ngSwitchCase="'Manuel'">Yo soy Manuel</p>
+    <p *ngSwitchDefault>Yo no soy nadie</p>
+  </div>
 </div>
