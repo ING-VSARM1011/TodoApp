@@ -54,6 +54,10 @@ export class LabsComponent {
 
     colorControl = new FormControl();
 
+    widthCtrl = new FormControl(50, {
+      nonNullable: true
+    });
+
     constructor() {
       this.colorControl.valueChanges.subscribe(value => {
         console.log(value);
