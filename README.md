@@ -1,15 +1,10 @@
-Todoapp
-Todoapp is an application built with Angular 20.3.
+# Todoapp
 
-Prerequisites
-Make sure you have the following installed:
+Todoapp is a web application built with Angular 20.3.
 
-Node.js 24.x
+## Development server
 
-npm 9.x or later
-
-Development server
-Run:
+Run the development server with:
 
 npm start
 
@@ -17,10 +12,9 @@ Then navigate to http://localhost:4200/.
 
 The application automatically reloads when you change any of the source files.
 
-Code scaffolding
-Angular CLI can be used to generate application code.
+## Code scaffolding
 
-For example:
+Use the Angular CLI to generate new application code:
 
 ng generate component component-name
 
@@ -34,58 +28,65 @@ ng generate guard guard-name
 
 The project is configured to skip generating unit test files for new artifacts.
 
-Build
-Run:
+## Build
+
+To build the application:
 
 npm run build
 
-The build artifacts are generated in the dist/todoapp/ directory.
+The build artifacts are stored in the dist/todoapp/ directory.
 
-For a development build:
+For a development build with watch mode:
 
 npm run watch
 
-Unit tests
-Run:
+## Running unit tests
+
+Run the unit tests with:
 
 npm test
 
-Unit tests are configured to run with Karma and Jasmine.
+The project uses Karma and Jasmine for unit testing.
 
 Note: The project currently does not contain unit test files, so npm test may report that no test inputs were found.
 
-Technology stack
-Angular 20.3
+## Technology stack
 
-Angular CLI 20.3
+    Angular: 20.3
 
-TypeScript 5.9
+    Angular CLI: 20.3
 
-RxJS 7.8
+    TypeScript: 5.9
 
-Zone.js 0.15
+    RxJS: 7.8
 
-Node.js 24
+    Zone.js: 0.15
 
-Security
-Project dependencies are regularly checked with npm's security audit:
+    Node.js: 24
+
+
+## Security
+
+Project dependencies can be checked for known vulnerabilities using:
 
 npm audit
 
 The project currently reports 0 known vulnerabilities.
 
-Useful commands
-Command	Description
-npm start	Start the development server
+## Useful commands
+
+Command	        Description
+npm start	    Start the development server
 npm run build	Build the application
 npm run watch	Build in watch mode
-npm test	Run unit tests
+npm test	    Run unit tests
 npx ng version	Display Angular and environment versions
-npm audit	Check dependencies for known vulnerabilities
+npm audit	    Check dependencies for known vulnerabilities
 
-Further help
-For more information about Angular CLI, run:
+## Further help
+
+or more information about Angular CLI, run:
 
 ng help
 
-You can also visit the Angular documentation.
+You can also visit the Angular documentation (https://angular.dev/)
