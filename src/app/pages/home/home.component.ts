@@ -1,11 +1,11 @@
 import { Component, Injector, computed, effect, inject, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { Task } from '../../models/task.model';
 import { FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
     selector: 'app-home',
-    imports: [CommonModule, ReactiveFormsModule],
+    imports: [ReactiveFormsModule],
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.css']
 })
