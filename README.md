@@ -1,27 +1,91 @@
-# Todoapp
+Todoapp
+Todoapp is an application built with Angular 20.3.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+Prerequisites
+Make sure you have the following installed:
 
-## Development server
+Node.js 24.x
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+npm 9.x or later
 
-## Code scaffolding
+Development server
+Run:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+npm start
 
-## Build
+Then navigate to http://localhost:4200/.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The application automatically reloads when you change any of the source files.
 
-## Running unit tests
+Code scaffolding
+Angular CLI can be used to generate application code.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+For example:
 
-## Running end-to-end tests
+ng generate component component-name
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+You can also generate other types of artifacts:
 
-## Further help
+ng generate directive directive-name
+ng generate pipe pipe-name
+ng generate service service-name
+ng generate class class-name
+ng generate guard guard-name
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The project is configured to skip generating unit test files for new artifacts.
+
+Build
+Run:
+
+npm run build
+
+The build artifacts are generated in the dist/todoapp/ directory.
+
+For a development build:
+
+npm run watch
+
+Unit tests
+Run:
+
+npm test
+
+Unit tests are configured to run with Karma and Jasmine.
+
+Note: The project currently does not contain unit test files, so npm test may report that no test inputs were found.
+
+Technology stack
+Angular 20.3
+
+Angular CLI 20.3
+
+TypeScript 5.9
+
+RxJS 7.8
+
+Zone.js 0.15
+
+Node.js 24
+
+Security
+Project dependencies are regularly checked with npm's security audit:
+
+npm audit
+
+The project currently reports 0 known vulnerabilities.
+
+Useful commands
+Command	Description
+npm start	Start the development server
+npm run build	Build the application
+npm run watch	Build in watch mode
+npm test	Run unit tests
+npx ng version	Display Angular and environment versions
+npm audit	Check dependencies for known vulnerabilities
+
+Further help
+For more information about Angular CLI, run:
+
+ng help
+
+You can also visit the Angular documentation.
