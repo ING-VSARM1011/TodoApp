@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 import { FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-labs',
-  standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
-  templateUrl: './labs.component.html',
-  styleUrls: ['./labs.component.css']
+    selector: 'app-labs',
+    imports: [CommonModule, ReactiveFormsModule],
+    templateUrl: './labs.component.html',
+    styleUrls: ['./labs.component.css']
 })
 export class LabsComponent {
     welcome = 'Hola';
